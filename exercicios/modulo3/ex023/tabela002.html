@@ -11,7 +11,7 @@
             font-size: 0.9em;            
         }
         table {
-            width: 500px;
+            width: 600px;
             border-collapse: collapse;
             background-color: rgba(241, 236, 230, 0.233);     
         }
@@ -19,13 +19,18 @@
             border: 1px solid black;
             padding: 10px;            
         }
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 10px;
+        }
         thead, tfoot {
             background-color: rgb(63, 57, 57);
             color: white;
         }
         td.num {
             text-align: right;            
-        }
+        }        
     </style>
 </head>
 <body>
@@ -41,10 +46,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Lista de Unidades Federativas do Brasil por População</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <TH>POPULAÇÃO</TH>
+                <th scope="col">ESTADO</th>
+                <th scope="col">POPULAÇÃO</th>
             </tr>      
         </thead>
         <tbody>
@@ -160,7 +166,7 @@
         </tbody>
         <tfoot>
              <tr>
-                <th>TOTAL DE HABITANTES</th>
+                <th scope="row">TOTAL DE HABITANTES</th>
                 <td class="num"><strong>000</strong></td>
              </tr>   
         </tfoot>
