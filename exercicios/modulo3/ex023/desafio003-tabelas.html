@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>=Desafios de Tabelas 003</title>
     <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
-        }
-        
+            color: black;
+        }        
         table {                        
             border-collapse: collapse;
             width: 500px;
@@ -19,8 +23,12 @@
             text-align: center;
             border: 1px solid black;
         }
+        th.destaque {
+            background-color: rgb(121, 115, 115);
+            color: white;
+        }
         td {
-            text-align: left;
+            text-align: center;
             border: 1px solid black;
             padding: 10px;
             
@@ -31,14 +39,14 @@
     <h1>Desafio de Tabelas 003</h1>
     <table>
         <tr>
-            <th rowspan="2">Àrea</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>            
-            <th rowspan="2">Média</th>
+            <th class="destaque" rowspan="2">Àrea</th>
+            <th class="destaque" rowspan="2">Disciplinas</th>
+            <th class="destaque" class="destaque"colspan="2">Notas</th>            
+            <th class="destaque" rowspan="2">Média</th>
         </tr>
         <tr>        
-            <td>Nota 1</td>
-            <td>Nota 2</td>
+            <th class="destaque">Nota 1</th>
+            <th class="destaque">Nota 2</th>
         </tr>
         <tr>
             <th rowspan="4">Exatas</th>
@@ -66,7 +74,7 @@
             <td>0.0</td>
         </tr>
         <tr>
-            <th colspan="4">Média de Exatas</th>
+            <th class="destaque" colspan="4">Média de Exatas</th>
             <td>0.0</td>
         </tr>
         <tr>
@@ -83,7 +91,7 @@
             <td>0.0</td>
         </tr>
         <tr>
-            <th colspan="4">Média de Humanas</th>
+            <th class="destaque" colspan="4">Média de Humanas</th>
             <td>0.0</td>
         </tr>
     </table>
